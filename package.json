@@ -1,7 +1,7 @@
 {
-  "name": "react-native-intro",
-  "version": "1.0.1",
-  "description": "An introduction to react native",
+  "name": "azure-ml-share",
+  "version": "1.0.0",
+  "description": "Sharing experience on Azure ML",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -10,7 +10,7 @@
     "deploy": "npm run clean & npm run build && git add --all && git commit -nm 'deploy' && git push origin gh-pages",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "ctlin,cph",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "3.0.3",
