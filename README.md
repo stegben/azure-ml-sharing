@@ -1,3 +1,3 @@
-# react-native-intro
+# Azure-ML-sharing
 
-[https://chentsulin.github.io/react-native-intro](https://chentsulin.github.io/react-native-intro)
+[https://stegben.github.io/azure-ml-sharing](https://stegben.github.io/azure-ml-sharing)
