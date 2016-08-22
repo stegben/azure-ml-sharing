@@ -47,7 +47,9 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "red"
+  primary: "#131129",
+  secondary: "#FAFAFA",
+  tertiary: "#D8C2A4"
 }, {
   primary: "Helvetica"
 });
@@ -63,13 +65,13 @@ export default class Presentation extends React.Component {
           progress={"pacman"}
         >
           <Slide transition={["zoom"]} bgColor="primary">
-            <Heading size={1} fit lineHeight={1} textColor="black">
+            <Heading size={1} fit lineHeight={1} textColor="tertiary">
               Azure Machine Learning
             </Heading>
-            <Heading size={2} fit textColor="white">
+            <Heading size={2} fit textColor="secondary">
               Case Sharing
             </Heading>
-            <Text textSize="1.5em" margin="20px 0px 0px" bold>cph from Yoctol Info.</Text>
+            <Text textSize="1.5em" margin="20px 0px 0px" bold textColor="tertiary">cph from Yoctol Info.</Text>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Layout>
@@ -78,40 +80,18 @@ export default class Presentation extends React.Component {
               </Fill>
               <Fill>
                 <Heading size={3} lineHeight={1} textColor="black">
-                  <Text textSize="1.5em">朱柏憲 cph</Text>
-                  <Text textSize="0.4em">Data Scientist @Yoctol</Text>
+                  <Text textSize="1.5em" textColor="secondary">朱柏憲 cph</Text>
+                  <Text textSize="0.4em" textColor="secondary">Data Scientist @Yoctol</Text>
                 </Heading>
                 <List>
                   <ListItem>
-                    Python:
+                    ML: scikit-learn, Keras, XGB, Spark
                   </ListItem>
                 </List>
               </Fill>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.reactNative.replace("/", "")} notes="You can even put notes on your slide. How awesome is that?" />
-          <Slide transition={["zoom", "fade"]} bgColor="primary">
-            <Heading caps fit>Release</Heading>
-            <Layout>
-              <Fill>
-                <Appear fid="1">
-                  <Heading size={4} textColor="secondary" bgColor="white" margin={10}>
-                    iOS<br /> 2015/01
-                  </Heading>
-                </Appear>
-              </Fill>
-              <Fill>
-                <Appear fid="2">
-                  <Heading size={4} textColor="secondary" bgColor="white" margin={10}>
-                    Android<br /> 2015/09
-                  </Heading>
-                </Appear>
-              </Fill>
-            </Layout>
-            <Appear fid="3">
-              <Text textSize="1.5em" margin="20px 0px 0px" bold textColor="white">Now - 0.28.0</Text>
-            </Appear>
-          </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
             <Image src={images.reactNativeGithub.replace("/", "")} margin="0px auto" width="1024px"/>
           </Slide>
