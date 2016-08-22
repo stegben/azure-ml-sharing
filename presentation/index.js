@@ -32,7 +32,7 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  ctlin: require("../assets/ctlin.jpg"),
+  cph: require("../assets/cph.jpg"),
   reactNative: require("../assets/react-native.png"),
   reactNativeGithub: require("../assets/github.png"),
   reactNativeNpm: require("../assets/npm.png"),
@@ -47,42 +47,43 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#ea6143"
+  primary: "red"
+}, {
+  primary: "Helvetica"
 });
 
 export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+        <Deck
+          transition={["zoom", "slide"]}
+          transitionDuration={500}
+          controls={false}
+          progress={"pacman"}
+        >
           <Slide transition={["zoom"]} bgColor="primary">
-            <Heading size={1} fit caps lineHeight={1} textColor="black">
-              React Native
+            <Heading size={1} fit lineHeight={1} textColor="black">
+              Azure Machine Learning
             </Heading>
-            <Heading size={2} fit caps textColor="white">
-              Intro
+            <Heading size={2} fit textColor="white">
+              Case Sharing
             </Heading>
-            <Text textSize="1.5em" margin="20px 0px 0px" bold>@chentsulin</Text>
+            <Text textSize="1.5em" margin="20px 0px 0px" bold>cph from Yoctol Info.</Text>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Layout>
               <Fill>
-                <Image src={images.ctlin.replace("/", "")} margin="0px auto" style={{borderRadius: "50%"}} />
+                <Image src={images.cph.replace("/", "")} margin="0px auto" style={{borderRadius: "50%"}} />
               </Fill>
               <Fill>
                 <Heading size={3} lineHeight={1} textColor="black">
-                  <Text textSize="1.5em">C. T. Lin</Text>
-                  <Text textSize="0.4em">Full Stack JS Architect@Yoctol</Text>
+                  <Text textSize="1.5em">朱柏憲 cph</Text>
+                  <Text textSize="0.4em">Data Scientist @Yoctol</Text>
                 </Heading>
                 <List>
                   <ListItem>
-                    Node, React, GraphQL..
-                  </ListItem>
-                  <ListItem>
-                    <Link target="_blank" href="https://github.com/chentsulin">chentsulin@github</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link target="_blank" href="https://twitter.com/chentsulin">chentsulin@twitter</Link>
+                    Python:
                   </ListItem>
                 </List>
               </Fill>
